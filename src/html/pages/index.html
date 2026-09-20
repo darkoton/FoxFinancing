@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- prettier-ignore -->
+    @@include("../layouts/_head.html", {
+      "title": "Gulp-template",
+      "description": "Modern Gulp boilerplate for fast frontend development with SCSS, image optimization, and multi-page builds.", "image": "./assets/img/preview.webp"
+    })
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+
+  <body>
+    <!-- @@include("../components/_preloader.html") -->
+
+    <div class="wrapper">
+      @@include("../layouts/_header.html")
+      <div class="content">
+        <main class="page">
+          @@include("../components/home/_hero.html")
+        </main>
+      </div>
+      @@include("../layouts/_footer.html")
+    </div>
+    <script src="scripts/ui.js" type="module"></script>
+    <script src="scripts/app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+packages:
+  - .
+
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - es5-ext
+  - esbuild
+  - sharp
+  - ttf2woff2
