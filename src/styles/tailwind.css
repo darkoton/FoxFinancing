@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {}
+@layer base {
+}
 
-@layer components {}
+@layer components {
+  .container {
+    @apply mx-auto w-full max-w-[var(--max-width-container)] px-[var(--container-padding)];
+  }
 
-@layer utilities {}
+  .btn {
+    @apply flex items-center justify-center gap-[10px] rounded-[4px];
+  }
+
+  .btn.primary {
+    @apply transition-hover border-[1px] border-solid border-orange bg-orange text-white hover:bg-orange/80;
+  }
+
+  .btn.secondary {
+    @apply transition-hover border-[1px] border-solid border-orange bg-transparent text-orange hover:bg-orange hover:text-white;
+  }
+}
+
+@layer utilities {
+  .transition-hover {
+    transition: all 0.3s ease 0s;
+  }
+}

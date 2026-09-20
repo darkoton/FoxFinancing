@@ -7,10 +7,6 @@
 // < " UI " >=============================================================================================================>//
 // @use './ui';
 
-// < " FILES COMPONENTS " >=============================================================================================================>//
-@use './layouts/header';
-@use './layouts/footer';
-
 // @use "./components/preloader";
 
 // < " LAYOUT " >=============================================================================================================>//
@@ -19,35 +15,10 @@ html {
   @include scrollbar(8px, #999, #fff, 10px);
 }
 
-body {
-  background-color: var(--white);
-  font-family: var(--font-arial);
-  color: var(--dark);
-  font-size: 14px;
-
-  &._lock-scroll {
-    overflow: hidden;
-  }
-}
-
-.wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
 // < " GRID " >=============================================================================================================>//
 
 .content {
   flex: 1 1 auto;
-}
-
-.container {
-  width: 100%;
-  padding: 0 var(--container-padding);
-  margin: 0 auto;
-  max-width: var(--max-width-container);
 }
 
 // < " MAIN BLOCK " >=============================================================================================================>//

@@ -1,12 +1,16 @@
 :root {
   /* Colors */
-  --white: #fff;
-  --dark: #000;
+  --white-rgb: 255, 255, 255;
+  --gray-black-rgb: 22, 20, 21;
+  --gray-rgb: 63, 63, 63;
+  --black-rgb: 5, 5, 5;
+  --orange-rgb: 244, 87, 34;
 
   /* Typography */
-  --font-arial: arial, 'Helvetica Neue', helvetica, sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-inter: 'Inter', sans-serif;
 
   /* Layout */
-  --max-width-container: 1200px;
-  --container-padding: 15px;
+  --max-width-container: 1240px;
+  --container-padding: 16px;
 }

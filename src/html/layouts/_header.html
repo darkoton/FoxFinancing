@@ -1,7 +1,163 @@
-<header class="header">
-  <div class="header__wrapper">
-    <div class="header__container _container">
-      <div class="header__body"></div>
+<header id="header">
+  <div class="container">
+    <div class="flex items-center justify-between gap-x-[10px] py-[10px]">
+      <a
+        href="/"
+        class="flex items-center text-sm lg:text-base xl:text-lg"
+      >
+        <svg
+          width="1em"
+          height="1em"
+          class="text-base text-orange lg:text-2xl"
+        >
+          <use xlink:href="assets/sprites/sprite.symbol.svg#logo"></use>
+        </svg>
+
+        <span class="text-orange">Fox</span> Financing
+      </a>
+
+      <nav
+        class="hidden items-center gap-x-[20px] lg:flex xl:gap-x-[40px]"
+      >
+        <a href="#" class="transition-hover text-base hover:text-orange">
+          Послуги
+        </a>
+        <a href="#" class="transition-hover text-base hover:text-orange">
+          Етапи роботи
+        </a>
+        <a href="#" class="transition-hover text-base hover:text-orange">
+          Про нас
+        </a>
+        <a href="#" class="transition-hover text-base hover:text-orange">
+          Відгуки
+        </a>
+        <a href="#" class="transition-hover text-base hover:text-orange">
+          Контакти
+        </a>
+        <a href="#" class="transition-hover text-base hover:text-orange">
+          Блог
+        </a>
+      </nav>
+
+      <div class="hidden items-center gap-x-[12px] lg:flex">
+        <div
+          class="flex cursor-pointer items-center gap-x-[5px] text-base text-orange"
+        >
+          <span>UA </span>
+          <svg class="text-base" width="1em" height="1em">
+            <use
+              xlink:href="assets/sprites/sprite.symbol.svg#arrow-down"
+            ></use>
+          </svg>
+        </div>
+
+        <div class="flex items-center gap-x-[12px]">
+          <a
+            class="btn secondary min-h-[40px] p-[12px_24px] text-sm"
+            href="tel:+48791729423"
+          >
+            <svg class="text-base" width="1em" height="1em">
+              <use
+                xlink:href="assets/sprites/sprite.symbol.svg#phone"
+              ></use>
+            </svg>
+            +48 791 729 423
+          </a>
+          <a
+            class="btn primary min-h-[40px] p-[12px] text-base"
+            href="https://t.me/FoxFinancing"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg class="text-black" width="1em" height="1em">
+              <use
+                xlink:href="assets/sprites/sprite.symbol.svg#telegram"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <button
+        id="burgerOpen"
+        class="transition-hover rounded-[4px] bg-gray-black p-[8px_16px] text-orange hover:text-white lg:hidden"
+      >
+        <svg width="1em" height="1em" class="text-2xl">
+          <use xlink:href="assets/sprites/sprite.symbol.svg#burger"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
+
+<div
+  id="menuBurger"
+  class="pointer-events-none fixed top-0 flex h-full w-full -translate-y-full flex-col justify-center gap-y-[32px] bg-gray-black p-[20px] opacity-0 transition-all duration-300 lg:hidden"
+>
+  <button
+    id="burgerClose"
+    class="transition-hover absolute right-[16px] top-[28px] p-[8px_16px] text-2xl text-orange hover:text-white"
+  >
+    <svg width="1em" height="1em">
+      <use xlink:href="assets/sprites/sprite.symbol.svg#close"></use>
+    </svg>
+  </button>
+
+  <nav
+    class="flex flex-col items-center justify-center gap-y-[32px] uppercase"
+  >
+    <a href="#" class="transition-hover text-xl hover:text-orange">
+      Послуги
+    </a>
+    <a href="#" class="transition-hover text-xl hover:text-orange">
+      Етапи роботи
+    </a>
+    <a href="#" class="transition-hover text-xl hover:text-orange">
+      Про нас
+    </a>
+    <a href="#" class="transition-hover text-xl hover:text-orange">
+      Відгуки
+    </a>
+    <a href="#" class="transition-hover text-xl hover:text-orange">
+      Контакти
+    </a>
+    <a href="#" class="transition-hover text-xl hover:text-orange"
+      >Блог
+    </a>
+  </nav>
+
+  <div class="flex flex-col items-center gap-[32px]">
+    <div
+      class="flex cursor-pointer items-center gap-x-[5px] text-xl text-orange"
+    >
+      <span>UA </span>
+      <svg class="text-base" width="1em" height="1em">
+        <use
+          xlink:href="assets/sprites/sprite.symbol.svg#arrow-down"
+        ></use>
+      </svg>
+    </div>
+
+    <div class="flex items-center gap-x-[16px]">
+      <a
+        class="btn secondary min-h-[40px] p-[10px_24px] text-sm"
+        href="tel:+48791729423"
+      >
+        <svg class="text-base" width="1em" height="1em">
+          <use xlink:href="assets/sprites/sprite.symbol.svg#phone"></use>
+        </svg>
+        +48 791 729 423
+      </a>
+      <a
+        class="btn primary min-h-[40px] p-[12px] text-base"
+        href="https://t.me/FoxFinancing"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><svg class="text-black" width="1em" height="1em">
+          <use
+            xlink:href="assets/sprites/sprite.symbol.svg#telegram"
+          ></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
