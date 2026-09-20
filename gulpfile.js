@@ -23,6 +23,7 @@ globalThis.app = {
 };
 
 // Tasks plugins (tailwind, etc.)
+import { tailwind } from './gulp/tasks/tailwind.js';
 
 // Tasks
 import { assets } from './gulp/tasks/assets.js';
@@ -92,11 +93,16 @@ function watcher() {
   gulp.watch(globs.sprites, sprite);
 
   // Plugins watcher
+  gulp.watch(
+    ['tailwind.config.js', `${paths.srcStyles}/tailwind.css`, globs.html],
+    tailwind,
+  );
 }
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, iconfonts);
 
 const mainTasks = gulp.parallel(
+  fonts,
   assets,
   html,
   scss,
@@ -104,6 +110,7 @@ const mainTasks = gulp.parallel(
   images,
   sprite,
   //etc.
+  tailwind,
 );
 
 const minTasks = gulp.parallel(minHTML, minCSS, minJS, minImg);
@@ -123,6 +130,7 @@ const buildTasks = gulp.parallel(
   seoTasks,
   packageBuild,
   // etc.
+  tailwind,
 );
 
 const dev = gulp.series(

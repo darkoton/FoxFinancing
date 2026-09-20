@@ -51,11 +51,11 @@ export const projectConfig = {
   // Favicon
   // ─────────────────────────────────────────────────────────
   favicons: {
-    appName: 'Gulp Template',
-    appShortName: 'Template',
-    appDescription: 'This is my gulp template',
+    appName: 'FoxFinancing',
+    appShortName: 'FoxFinancing',
+    appDescription: 'This is FoxFinancing',
     developerName: 'Artem Rachuk',
-    developerURL: 'https://github.com/darkoton/gulp-template',
+    developerURL: 'https://github.com/darkoton/FoxFinancing',
     background: '#000',
   },
 
