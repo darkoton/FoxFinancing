@@ -1,0 +1,14 @@
+#hero-banner-pagination {
+  & .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid rgb(var(--white-rgb));
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  & .swiper-pagination-bullet-active {
+    background-color: rgb(var(--white-rgb));
+  }
+}

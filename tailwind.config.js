@@ -15,8 +15,8 @@ export default {
         Inter: ['Inter', 'sans-serif'],
       },
       fontSize: {
-        h1: ['40px', { lineHeight: '48px' }],
-        h2: ['36px', { lineHeight: '43px' }],
+        h1: ['40px', { lineHeight: 'normal' }],
+        h2: ['36px', { lineHeight: 'normal' }],
       },
       spacing: {},
     },
