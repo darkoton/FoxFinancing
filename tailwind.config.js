@@ -20,6 +20,21 @@ export default {
       },
       spacing: {},
     },
+
+    screens: {
+      mb: '390px',
+      xs: '440px',
+      sm: '640px',
+      md: '768px',
+      lg: '992px',
+      xl: '1240px',
+      '2xl': '1440px',
+    },
+
+    backgroundImage: {
+      silver:
+        'linear-gradient(319.96deg, #a8a8a6 21.63%, #696969 52.66%, #f9f8f6 67.32%, #d4d4d4 78.31%, #7f7f7f 90.33%)',
+    },
   },
   future: {
     hoverOnlyWhenSupported: true,

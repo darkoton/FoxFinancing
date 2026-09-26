@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    line-height: normal;
+  }
 }
 
 @layer components {
@@ -24,6 +27,10 @@
 }
 
 @layer utilities {
+  .leading-normal {
+    line-height: normal;
+  }
+
   .transition-hover {
     transition: all 0.3s ease 0s;
   }
