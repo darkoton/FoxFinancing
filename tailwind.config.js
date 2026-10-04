@@ -34,6 +34,8 @@ export default {
     backgroundImage: {
       silver:
         'linear-gradient(319.96deg, #a8a8a6 21.63%, #696969 52.66%, #f9f8f6 67.32%, #d4d4d4 78.31%, #7f7f7f 90.33%)',
+      'black-transition':
+        'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b0705 73.08%);',
     },
   },
   future: {
