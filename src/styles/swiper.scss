@@ -13,8 +13,8 @@
   & .swiper-pagination-bullet-active {
     background-color: rgb(var(--white-rgb));
   }
-}
 
-.swiper-button-disabled {
-  background-color: transparent !important;
+  & .swiper-button-disabled {
+    background-color: transparent !important;
+  }
 }

@@ -1,0 +1,20 @@
+.question-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  p {
+    font-size: 16px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (width <= 767.98px) {
+    p {
+      font-size: 14px;
+    }
+  }
+}

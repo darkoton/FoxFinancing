@@ -5,3 +5,6 @@ import './chunks/imageFormat.js';
 import './chunks/device.js';
 
 import './chunks/burger_menu.js';
+
+import './chunks/spoiler.js';
+
