@@ -1,0 +1,310 @@
+<section>
+  <div class="container">
+    <div
+      class="flex flex-col gap-[32px] py-[50px] md:gap-[38px] md:py-[75px] lg:gap-[48px] xl:gap-[56px]"
+    >
+      <div class="flex flex-col gap-[20px]">
+        <h2
+          class="text-center text-[20px] font-medium uppercase md:text-[28px]"
+        >
+          Почніть співпрацю <br />
+          <span class="text-orange">з FoxFinancing вже сьогодні</span>
+        </h2>
+
+        <p class="text-center text-[14px] md:text-[16px]">
+          Залиште заявку - менеджер зв’яжеться з Вами протягом 30 хвилин.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col gap-[32px] md:gap-[38px] lg:gap-[48px] xl:gap-[56px]"
+      >
+        <div class="flex w-full flex-col gap-[20px] lg:flex-row">
+          <div
+            class="flex flex-col gap-[24px] rounded-[16px] bg-gray-black p-[20px] md:gap-[32px]"
+          >
+            <div class="flex flex-wrap gap-[16px]">
+              <div class="flex w-full flex-col gap-[4px]">
+                <label for="username" class="text-[14px] md:text-[16px]">
+                  Ваше ім’я
+                </label>
+
+                <input
+                  class="w-full rounded-[4px] border-[1px] border-[#373737] bg-[#212121] p-[16px] text-[14px] transition-[border] placeholder:text-white/60 focus:border-orange md:p-[17px_20px] md:text-[16px]"
+                  type="text"
+                  id="username"
+                  placeholder="Ваше ім’я"
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="flex flex-[48.5%] flex-col gap-[4px]">
+                <label for="phone" class="text-[14px] md:text-[16px]">
+                  Телефон
+                </label>
+
+                <input
+                  class="w-full rounded-[4px] border-[1px] border-[#373737] bg-[#212121] p-[16px] text-[14px] transition-[border] placeholder:text-white/60 focus:border-orange md:p-[17px_20px] md:text-[16px]"
+                  type="text"
+                  id="phone"
+                  placeholder="Телефон*"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="flex flex-[48.5%] flex-col gap-[4px]">
+                <label for="email" class="text-[14px] md:text-[16px]">
+                  Email
+                </label>
+
+                <input
+                  class="w-full rounded-[4px] border-[1px] border-[#373737] bg-[#212121] p-[16px] text-[14px] transition-[border] placeholder:text-white/60 focus:border-orange md:p-[17px_20px] md:text-[16px]"
+                  type="text"
+                  id="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="flex w-full flex-col gap-[4px]">
+                <label class="text-[14px] md:text-[16px]">
+                  Тип послуг
+                </label>
+
+                <div data-select data-value="0" class="group">
+                  <button
+                    data-select-header
+                    class="transition-hover relative w-full rounded-[4px] border-[1px] border-[#373737] bg-[#212121] p-[16px] pr-[20px] text-[14px] placeholder:text-white/60 focus:border-orange md:p-[17px_20px] md:text-[16px]"
+                  >
+                    <span
+                      data-select-value
+                      data-select-placeholder="Тип послуг*"
+                    ></span>
+
+                    <svg
+                      width="1em"
+                      height="1em"
+                      class="transition-hover absolute right-[20px] top-1/2 -translate-y-1/2 text-[16px] text-white/60 group-[.\_active]:-scale-y-100"
+                    >
+                      <use
+                        xlink:href="assets/sprites/sprite.symbol.svg#arrow-down"
+                      ></use>
+                    </svg>
+                  </button>
+                  <ul
+                    data-select-list
+                    class="rounded-[4px] border-[1px] border-[#373737] bg-gray-black shadow-sm"
+                  >
+                    <li
+                      value="1"
+                      data-select-option
+                      class="transition-hover bg-transparent p-[10px_16px] text-[16px] hover:bg-white/10"
+                    >
+                      Тип послуг 1
+                    </li>
+                    <li
+                      value="2"
+                      data-select-option
+                      class="transition-hover bg-transparent p-[10px_16px] text-[16px] hover:bg-white/10"
+                    >
+                      Тип послуг 2
+                    </li>
+                    <li
+                      value="3"
+                      data-select-option
+                      class="transition-hover bg-transparent p-[10px_16px] text-[16px] hover:bg-white/10"
+                    >
+                      Тип послуг 3
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="flex w-full flex-col gap-[4px]">
+                <label for="email" class="text-[14px] md:text-[16px]">
+                  Коментар
+                </label>
+
+                <textarea
+                  class="w-full rounded-[4px] border-[1px] border-[#373737] bg-[#212121] p-[16px] text-[14px] transition-[border] placeholder:text-white/60 focus:border-orange md:p-[17px_20px] md:text-[16px]"
+                  id="comment"
+                  rows="7"
+                  placeholder="Коментар"
+                ></textarea>
+              </div>
+            </div>
+
+            <button class="btn primary min-h-[48px] w-full">
+              Надіслати заявку
+              <svg width="1em" height="1em" class="text-[16px]">
+                <use
+                  xlink:href="assets/sprites/sprite.symbol.svg#nav-right"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="relative z-0 flex w-full flex-col gap-[32px] overflow-hidden rounded-[12px] bg-orange p-[16px] md:rounded-[16px] md:p-[20px] lg:max-w-[40%] xl:max-w-[505px]"
+          >
+            <h3 class="text-[20px] font-medium uppercase md:text-[28px]">
+              Наші контакти:
+            </h3>
+
+            <div
+              class="flex flex-auto flex-col gap-[32px] lg:justify-between"
+            >
+              <div class="flex flex-col gap-[12px]">
+                <h4
+                  class="text-[14px] uppercase md:text-[16px] lg:text-[18px]"
+                >
+                  Адреса:
+                </h4>
+                <a
+                  class="text-[14px] hover:underline md:text-[16px]"
+                  href="https://maps.app.goo.gl/iE3EidhTy73FQF2p7"
+                  target="_blank"
+                >
+                  01-234 Warszawa, ul. Marcina Kasprzaka 29/921
+                </a>
+              </div>
+
+              <div class="flex flex-col gap-[12px]">
+                <h4
+                  class="text-[14px] uppercase md:text-[16px] lg:text-[18px]"
+                >
+                  Контакти:
+                </h4>
+
+                <div class="flex flex-col gap-[8px]">
+                  <a
+                    href="FoxFinancing.com"
+                    class="flex items-center gap-[8px] text-[16px] hover:underline"
+                  >
+                    <svg width="1em" height="1em" class="text-[24px]">
+                      <use
+                        xlink:href="assets/sprites/sprite.symbol.svg#email"
+                      ></use>
+                    </svg>
+                    FoxFinancing.com
+                  </a>
+
+                  <a
+                    href="FoxFinancing.com"
+                    class="flex items-center gap-[8px] text-[16px] hover:underline"
+                  >
+                    <svg width="1em" height="1em" class="text-[24px]">
+                      <use
+                        xlink:href="assets/sprites/sprite.symbol.svg#phone"
+                      ></use>
+                    </svg>
+                    +48 791 729 423
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-[12px]">
+                <h4
+                  class="text-[14px] uppercase md:text-[16px] lg:text-[18px]"
+                >
+                  Графік роботи:
+                </h4>
+                <p class="text-[14px] md:text-[16px]">
+                  Понеділок - п’ятниця 09:00 - 17:00
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-[12px]">
+                <h4
+                  class="text-[14px] uppercase md:text-[16px] lg:text-[18px]"
+                >
+                  Соціальні мережі:
+                </h4>
+
+                <div class="flex gap-[20px]">
+                  <a
+                    href="#"
+                    class="transition-hover flex size-[40px] items-center justify-center rounded-[4px] bg-white text-orange hover:bg-black md:size-[52px]"
+                  >
+                    <svg
+                      width="1em"
+                      height="1em"
+                      class="text-[24px] md:text-[32px]"
+                    >
+                      <use
+                        xlink:href="assets/sprites/sprite.symbol.svg#instagram"
+                      ></use>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="transition-hover flex size-[40px] items-center justify-center rounded-[4px] bg-white text-orange hover:bg-black md:size-[52px]"
+                  >
+                    <svg
+                      width="1em"
+                      height="1em"
+                      class="text-[24px] md:text-[32px]"
+                    >
+                      <use
+                        xlink:href="assets/sprites/sprite.symbol.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="transition-hover flex size-[40px] items-center justify-center rounded-[4px] bg-white text-orange hover:bg-black md:size-[52px]"
+                  >
+                    <svg
+                      width="1em"
+                      height="1em"
+                      class="text-[24px] md:text-[32px]"
+                    >
+                      <use
+                        xlink:href="assets/sprites/sprite.symbol.svg#telegram"
+                      ></use>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="transition-hover flex size-[40px] items-center justify-center rounded-[4px] bg-white text-orange hover:bg-black md:size-[52px]"
+                  >
+                    <svg
+                      width="1em"
+                      height="1em"
+                      class="text-[24px] md:text-[32px]"
+                    >
+                      <use
+                        xlink:href="assets/sprites/sprite.symbol.svg#whatsapp"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <svg
+              width="1em"
+              height="1em"
+              class="pointer-events-none absolute bottom-0 right-0 -z-10 translate-x-[20%] translate-y-[10%] text-[389px] text-white/[0.04] md:translate-y-0 md:text-[467px] lg:bottom-[20px]"
+            >
+              <use
+                xlink:href="assets/sprites/sprite.symbol.svg#logo"
+              ></use>
+            </svg>
+          </div>
+        </div>
+
+        <iframe
+          class="w-full rounded-[16px]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.857954238984!2d20.95373407693379!3d52.22779845782195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb67bfa0ad43%3A0xec99686ab3064076!2zTWFyY2luYSBLYXNwcnpha2EgMjkvOTIxLCAwMS0yMzQgV2Fyc3phd2EsINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1791741447545!5m2!1sru!2sua"
+          height="350"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,3 +1,5 @@
+import './UI/select.js';
+
 new Swiper('#hero-banner', {
   slidesPerView: 1,
   spaceBetween: 15,

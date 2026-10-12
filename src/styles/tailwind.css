@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  input,
+  textarea,
+  button {
+    outline: none;
+  }
+
   * {
     line-height: normal;
   }
