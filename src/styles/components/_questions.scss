@@ -5,11 +5,25 @@
 
   p {
     font-size: 16px;
+    display: inline;
   }
 
   ul {
     display: flex;
     flex-direction: column;
+
+    li {
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 1000px;
+        background: #fff;
+        margin-bottom: 2px;
+        margin-right: 4px;
+      }
+    }
   }
 
   @media (width <= 767.98px) {
