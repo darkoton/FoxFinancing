@@ -103,3 +103,35 @@ function updateReviewsPagination(swiper) {
     swiper.pagination.update();
   }
 }
+
+new Swiper('#blog-slider', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  grabCursor: true,
+  speed: 800,
+
+  navigation: {
+    prevEl: '.blog-prev',
+    nextEl: '.blog-next',
+  },
+
+  pagination: {
+    el: '#blog-pagination',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      centeredSlides: true,
+    },
+
+    639.8: {
+      slidesPerView: 2,
+      centeredSlides: false,
+    },
+
+    991.8: {
+      slidesPerView: 3,
+    },
+  },
+});
