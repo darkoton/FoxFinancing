@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="./styles/swiper.css" />
   </head>
 
-  <body class="bg-black font-Roboto leading-[normal] text-white">
+  <body
+    class="scroll-hidden bg-black font-Roboto leading-[normal] text-white"
+  >
     <!-- @@include("../components/_preloader.html") -->
 
     <div class="wrapper">
@@ -37,6 +39,8 @@
           @@include("../components/home/_blog.html")
         </main>
       </div>
+      @@include("../components/popups/_contact-popup.html")
+      @@include("../components/popups/_thanks-popup.html")
       @@include("../layouts/_footer.html")
     </div>
 

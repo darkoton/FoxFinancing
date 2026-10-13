@@ -40,4 +40,34 @@
   .transition-hover {
     transition: all 0.3s ease 0s;
   }
+
+  /* For Chrome & Safari */
+  .scroll-orange::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .scroll-orange::-webkit-scrollbar-thumb {
+    background: rgb(var(--orange-rgb));
+    border-radius: 5px;
+  }
+
+  .scroll-orange::-webkit-scrollbar-track {
+    background: rgb(var(--black-rgb));
+  }
+
+  /* For Firefox */
+  @supports (-moz-appearance: none) {
+    .scroll-orange {
+      scrollbar-color: rgb(var(--orange-rgb)) rgb(var(--black-rgb));
+    }
+  }
+
+  .scroll-hidden {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+  }
+
+  .scroll-hidden::-webkit-scrollbar {
+    width: 0;
+  }
 }
