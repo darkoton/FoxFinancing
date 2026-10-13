@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ua">
+  <head>
+    <!-- prettier-ignore -->
+    @@include("../layouts/_head.html", {
+      "title": "FoxFinancing - Post",
+      "description": "FoxFinancing - Post", "image": "./assets/img/preview.webp"
+    })
+
+    <link rel="stylesheet" href="./styles/post.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/swiper.css" />
+  </head>
+
+  <body
+    class="scroll-hidden bg-black font-Roboto leading-[normal] text-white"
+  >
+    <!-- @@include("../components/_preloader.html") -->
+
+    <div class="wrapper">
+      @@include("../layouts/_office.html")
+      @@include("../layouts/_header.html")
+      <div class="content">
+        <main class="page">
+          @@include("../components/post/_post.html")
+        </main>
+      </div>
+
+      @@include("../layouts/_footer.html")
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="scripts/ui.js" type="module"></script>
+    <script src="scripts/app.js" type="module"></script>
+    <script src="scripts/home.js" type="module"></script>
+  </body>
+</html>
