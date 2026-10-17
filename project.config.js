@@ -28,7 +28,7 @@ export const projectConfig = {
       quality: 80,
     },
     avif: {
-      enabled: false,
+      enabled: true,
       quality: 80,
     },
     jpeg: {
